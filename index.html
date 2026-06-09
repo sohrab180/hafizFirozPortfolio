@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Hafiz Firoz Arquam Champarni - Hafiz-e-Quran, Islamic Speaker, and Shayar from Mehsi, East Champaran, Bihar.">
+<meta name="keywords" content="Firoz Arquam, Islamic Speaker, Quran Recitation, Islamic Poetry, Shayar, East Champaran">
+<meta name="author" content="Firoz Arquam Champarni">
+<title>Firoz Arquam Champarni | Hafiz-e-Quran | Islamic Speaker | Shayar</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['Playfair Display', 'serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+        colors: {
+          gold: {
+            300: '#fde68a',
+            400: '#fbbf24',
+            500: '#f59e0b',
+            600: '#d97706',
+            700: '#b45309',
+          },
+          emerald: {
+            900: '#064e3b',
+            800: '#065f46',
+            700: '#047857',
+            600: '#059669',
+          }
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  * { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+  /* ── NAVIGATION ── */
+  .glass-nav {
+    background: rgba(4, 47, 32, 0.94);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(251,191,36,0.25);
+  }
+  .dark .glass-nav {
+    background: rgba(2, 30, 20, 0.97);
+    border-bottom-color: rgba(251,191,36,0.3);
+  }
+
+  /* ── HERO ── */
+  .hero-bg {
+    background: linear-gradient(135deg, #022c1e 0%, #042f1f 40%, #0a3d2a 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=2070') center/cover no-repeat;
+    opacity: 0.12;
+  }
+  .hero-orb-1 {
+    position: absolute;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(251,191,36,0.12) 0%, transparent 70%);
+    top: -200px; right: -200px;
+    pointer-events: none;
+  }
+  .hero-orb-2 {
+    position: absolute;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(5,150,105,0.1) 0%, transparent 70%);
+    bottom: -100px; left: -100px;
+    pointer-events: none;
+  }
+
+  /* Profile image - perfect circle crop */
+  .profile-ring {
+    background: conic-gradient(#fbbf24, #f59e0b, #fde68a, #fbbf24);
+    padding: 4px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .profile-img-wrap {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #022c1e;
+    position: relative;
+  }
+  .profile-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  /* ── FLOATS / ANIMATIONS ── */
+  @keyframes floatY {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  .float { animation: floatY 5s ease-in-out infinite; }
+
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  .gradient-text {
+    background: linear-gradient(90deg, #fbbf24, #fde68a, #f59e0b, #fbbf24);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 4s linear infinite;
+  }
+
+  /* ── BADGES ── */
+  .hero-badge {
+    background: rgba(251,191,36,0.12);
+    border: 1px solid rgba(251,191,36,0.3);
+    color: #fde68a;
+    font-size: 0.78rem;
+    padding: 4px 14px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── STAT CARD ── */
+  .stat-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(251,191,36,0.18);
+    border-radius: 16px;
+    padding: 16px 24px;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  .stat-card:hover {
+    background: rgba(251,191,36,0.1);
+    border-color: rgba(251,191,36,0.4);
+    transform: translateY(-4px);
+  }
+
+  /* ── BUTTONS ── */
+  .btn-primary {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #1a0a00;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+    box-shadow: 0 8px 24px rgba(245,158,11,0.35);
+    font-family: 'Inter', sans-serif;
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 14px 32px rgba(245,158,11,0.5);
+  }
+  .btn-outline {
+    border: 2px solid rgba(251,191,36,0.6);
+    color: #fde68a;
+    padding: 12px 28px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
+  .btn-outline:hover {
+    background: rgba(251,191,36,0.12);
+    border-color: #fbbf24;
+    transform: translateY(-2px);
+  }
+
+  /* ── SECTION HEADING ── */
+  .section-label {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #d97706;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+  }
+  .dark .section-label { color: #fbbf24; }
+  .section-divider {
+    width: 60px; height: 3px;
+    background: linear-gradient(90deg, #fbbf24, #f59e0b);
+    border-radius: 999px;
+    margin: 14px 0 0 0;
+  }
+  .section-divider-center {
+    margin: 14px auto 0;
+  }
+
+  /* ── SERVICE CARD ── */
+  .service-card {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(251,191,36,0.04), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .service-card:hover::before { opacity: 1; }
+  .service-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(251,191,36,0.25);
+    box-shadow: 0 24px 40px rgba(0,0,0,0.12);
+  }
+  .dark .service-card:hover {
+    box-shadow: 0 24px 40px rgba(0,0,0,0.4);
+  }
+  .service-icon-wrap {
+    width: 72px; height: 72px;
+    background: linear-gradient(135deg, rgba(251,191,36,0.15), rgba(245,158,11,0.08));
+    border: 1px solid rgba(251,191,36,0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+  }
+  .service-card:hover .service-icon-wrap {
+    background: linear-gradient(135deg, rgba(251,191,36,0.25), rgba(245,158,11,0.15));
+    border-color: rgba(251,191,36,0.4);
+    transform: scale(1.08);
+  }
+
+  /* ── POETRY CARD ── */
+  .poetry-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s;
+  }
+  .poetry-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 3px;
+    background: linear-gradient(90deg, #fbbf24, #f59e0b);
+    transition: width 0.4s;
+  }
+  .poetry-card:hover::after { width: 100%; }
+  .poetry-card:hover { transform: translateY(-6px); }
+
+  /* ── GALLERY ── */
+  .gallery-card {
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+  }
+  .gallery-card img {
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  .gallery-card:hover img { transform: scale(1.07); }
+  .gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(2,44,30,0.7) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  .gallery-card:hover .gallery-overlay { opacity: 1; }
+
+  /* ── ABOUT SECTION RIGHT IMAGE ── */
+  .about-img-frame {
+    position: relative;
+    display: inline-block;
+  }
+  .about-img-frame::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border: 2px solid rgba(251,191,36,0.3);
+    border-radius: 24px;
+    z-index: 0;
+  }
+  .about-img-frame::after {
+    content: '';
+    position: absolute;
+    bottom: -16px; right: -16px;
+    width: 120px; height: 120px;
+    background: linear-gradient(135deg, rgba(251,191,36,0.15), transparent);
+    border-radius: 50%;
+    z-index: 0;
+  }
+  .about-img-inner {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    border: 3px solid rgba(251,191,36,0.35);
+  }
+  .about-img-inner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  /* ── CONTACT ── */
+  .contact-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(251,191,36,0.2);
+    border-radius: 20px;
+    transition: all 0.3s;
+  }
+  .contact-card:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(251,191,36,0.4);
+  }
+
+  /* ── DARK MODE ── */
+  .dark body { background-color: #0a0f0d; }
+  .dark .bg-stone-50 { background-color: #111610; }
+  .dark .bg-white { background-color: #131a14; }
+  .dark .text-gray-700 { color: #d1d5db; }
+  .dark .text-gray-600 { color: #9ca3af; }
+  .dark .text-gray-500 { color: #6b7280; }
+  .dark .border-gray-100 { border-color: #1f2a20; }
+  .dark .bg-stone-100 { background-color: #141a14; }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #0a2a1a; }
+  ::-webkit-scrollbar-thumb { background: #d97706; border-radius: 3px; }
+
+  /* ── MOBILE NAV ── */
+  #mobile-menu {
+    display: none;
+    background: rgba(4, 47, 32, 0.98);
+    border-top: 1px solid rgba(251,191,36,0.2);
+  }
+  #mobile-menu.open { display: block; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    .hero-bg::before { background-attachment: scroll; }
+    .profile-ring { width: 140px !important; height: 140px !important; }
+  }
+
+  /* ── RTL for Urdu/Arabic ── */
+  [dir="rtl"] { text-align: right; }
+  [dir="rtl"] .section-divider { margin: 14px 0 0 auto; }
+  [dir="rtl"] .flex-row-reverse-rtl { flex-direction: row-reverse; }
+</style>
+</head>
+
+<body class="bg-stone-50 text-gray-800 transition-colors duration-300">
+
+<!-- ═══════════════════════════════════ NAVIGATION ═══════════════════════════════════ -->
+<nav class="fixed top-0 w-full glass-nav z-50 shadow-md transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-2.5">
+      <div class="p-2 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow">
+
+        <span class="font-bold text-base sm:text-lg tracking-tight text-green-900">Firoz <span class="text-green-700">Arquam</span></span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="hidden lg:flex items-center gap-6 xl:gap-8 font-medium text-sm">
+      <a href="#home" class="text-white/80 hover:text-yellow-400 transition nav-home">Home</a>
+      <a href="#about" class="text-white/80 hover:text-yellow-400 transition nav-about">About</a>
+      <a href="#services" class="text-white/80 hover:text-yellow-400 transition nav-services">Services</a>
+      <a href="#poetry" class="text-white/80 hover:text-yellow-400 transition nav-poetry">Poetry</a>
+      <a href="#gallery" class="text-white/80 hover:text-yellow-400 transition nav-gallery">Gallery</a>
+      <a href="#contact" class="text-white/80 hover:text-yellow-400 transition nav-contact">Contact</a>
+    </div>
+
+    <!-- Controls -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Dark Mode -->
+      <button id="darkModeToggle" aria-label="Toggle dark mode"
+        class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
+        <i class="fas fa-sun text-yellow-400 text-sm dark:hidden"></i>
+        <i class="fas fa-moon text-yellow-300 text-sm hidden dark:inline"></i>
+      </button>
+
+      <!-- Language -->
+      <select id="langSelect" class="bg-gray-500 hover:bg-gray-500 text-white border border-yellow-500/30 rounded-xl px-2 py-1.5 text-xs sm:text-sm font-medium focus:outline-none cursor-pointer transition">
+        <option value="en" selected>🇬🇧 EN</option>
+        <option value="hi">🇮🇳 HI</option>
+        <option value="ur">اردو UR</option>
+        <option value="ar">AR عربي</option>
+      </select>
+
+      <!-- Hamburger -->
+      <button id="menuToggle" class="lg:hidden w-9 h-9 rounded-full bg-white/10 flex items-center justify-center" aria-label="Menu">
+        <i class="fas fa-bars text-white text-sm"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-menu">
+    <div class="flex flex-col py-3 px-4 gap-1 text-sm font-medium">
+      <a href="#home" class="text-white/80 hover:text-yellow-400 py-2.5 border-b border-white/5 transition nav-home">Home</a>
+      <a href="#about" class="text-white/80 hover:text-yellow-400 py-2.5 border-b border-white/5 transition nav-about">About</a>
+      <a href="#services" class="text-white/80 hover:text-yellow-400 py-2.5 border-b border-white/5 transition nav-services">Services</a>
+      <a href="#poetry" class="text-white/80 hover:text-yellow-400 py-2.5 border-b border-white/5 transition nav-poetry">Poetry</a>
+      <a href="#gallery" class="text-white/80 hover:text-yellow-400 py-2.5 border-b border-white/5 transition nav-gallery">Gallery</a>
+      <a href="#contact" class="text-white/80 hover:text-yellow-400 py-2.5 transition nav-contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════ HERO SECTION ═══════════════════════════════════ -->
+<section id="home" class="hero-bg min-h-screen flex items-center pt-20 pb-12 text-white relative">
+  <div class="hero-orb-1"></div>
+  <div class="hero-orb-2"></div>
+
+  <!-- Decorative Arabic text bg -->
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[22vw] font-bold text-white/[0.025] select-none pointer-events-none whitespace-nowrap font-display leading-none">
+    بسم الله
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <!-- LEFT — Text Content -->
+      <div class="order-2 lg:order-1 text-center lg:text-left">
+        <!-- Eyebrow -->
+        <div class="flex items-center gap-2 justify-center lg:justify-start mb-5">
+          <span class="hero-badge"><i class="fas fa-mosque"></i> <span class="hero-eyebrow-text">Bismillah ir-Rahman ir-Rahim</span></span>
+        </div>
+
+        <!-- Name -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-3 font-display">
+          <span class="gradient-text">Firoz Arquam</span><br>
+          <span class="text-white">Champarni</span>
+        </h1>
+
+        <!-- Designation -->
+        <div class="flex flex-wrap gap-2 justify-center lg:justify-start mt-4 mb-6">
+          <span class="hero-badge"><i class="fas fa-quran text-yellow-400"></i> <span class="designation-1">Hafiz-e-Quran</span></span>
+          <span class="hero-badge"><i class="fas fa-microphone-alt text-yellow-400"></i> <span class="designation-2">Islamic Speaker</span></span>
+          <span class="hero-badge"><i class="fas fa-feather-alt text-yellow-400"></i> <span class="designation-3">Shayar</span></span>
+        </div>
+
+        <!-- Short Bio -->
+        <p class="text-white/70 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8 hero-bio">
+          Serving the Ummah through Quran recitation with Tajweed, inspiring Islamic speeches, and soul-stirring poetry from Mehsi, East Champaran, Bihar.
+        </p>
+
+        <!-- Stats Row -->
+        <div class="grid grid-cols-3 gap-3 sm:gap-4 max-w-sm mx-auto lg:mx-0 mb-8">
+          <div class="stat-card">
+            <p class="text-2xl font-extrabold text-yellow-400 font-display">150+</p>
+            <p class="text-xs text-white/60 mt-1 stat-majlis">Majalis</p>
+          </div>
+          <div class="stat-card">
+            <p class="text-2xl font-extrabold text-yellow-400 font-display">50+</p>
+            <p class="text-xs text-white/60 mt-1 stat-poems">Poems</p>
+          </div>
+          <div class="stat-card">
+            <p class="text-2xl font-extrabold text-yellow-400 font-display">✓</p>
+            <p class="text-xs text-white/60 mt-1 stat-hifz">Hafiz-e-Quran</p>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+          <a href="tel:+918757110296" class="btn-primary text-sm sm:text-base">
+            <i class="fas fa-phone"></i>
+            <span class="cta-contact">Call Now</span>
+          </a>
+          <a href="#poetry" class="btn-outline text-sm sm:text-base">
+            <i class="fas fa-feather-alt"></i>
+            <span class="cta-poetry">Explore Poetry</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT — Profile Image -->
+      <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+        <div class="relative float">
+          <!-- Decorative ring -->
+          <div class="absolute -inset-6 rounded-full bg-gradient-to-br from-yellow-500/20 to-emerald-800/20 blur-2xl pointer-events-none"></div>
+
+          <!-- Gold rotating ring -->
+          <div class="profile-ring" style="width:260px;height:260px;" id="profileRing">
+            <div class="profile-img-wrap">
+              <img src="assets/images/profile.jpeg"
+                   alt="Hafiz Firoz Arquam Champarni"
+                   onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face'">
+            </div>
+          </div>
+
+          <!-- Floating badges around image -->
+          <div class="absolute -top-3 -right-3 bg-yellow-400 text-black text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+          <i class="fas fa-map-marker-alt text-xs"></i> <span>Mehsi</span>
+          </div>
+          <div class="absolute -bottom-3 -left-3 bg-emerald-700 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+            <i class="fas fa-map-marker-alt text-xs"></i> <span>Bihar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+    <span class="text-xs text-white/60 scroll-text">Scroll Down</span>
+    <div class="w-px h-10 bg-gradient-to-b from-yellow-400/80 to-transparent"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ ABOUT SECTION ═══════════════════════════════════ -->
+<section id="about" class="py-20 sm:py-24 md:py-28 bg-white dark:bg-gray-950 relative overflow-hidden">
+  <!-- Decorative -->
+  <div class="absolute top-0 right-0 w-80 h-80 bg-yellow-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <!-- Text -->
+      <div>
+        <span class="section-label about-label">About Me</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-emerald-900 dark:text-emerald-400 mt-1 mb-2 leading-tight font-display">
+          <span class="about-title">Who I Am</span>
+        </h2>
+        <div class="section-divider mb-6"></div>
+
+        <p class="text-gray-600 dark:text-gray-300 text-base sm:text-lg leading-relaxed mb-6 about-desc">
+          I am Firoz Arquam Champarni from Mehsi, East Champaran, Bihar. I am honored to serve the Muslim community through the divine art of Quran recitation with Tajweed, inspirational Islamic speeches, and soul-stirring poetry. My mission is to spread the light of knowledge, unity, and faith through every gathering, Jalsa, and Urs. Let's walk this blessed path together, seeking the pleasure of Allah and following the footsteps of our beloved Prophet Muhammad (ﷺ).
+        </p>
+
+        <!-- Values -->
+        <div class="flex flex-wrap gap-2 mb-8">
+          <span class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 px-3 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-800">
+            <i class="fas fa-hand-peace text-xs"></i> <span class="value-1">Service to Ummah</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 px-3 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-800">
+            <i class="fas fa-heart text-xs"></i> <span class="value-2">Love for Prophet ﷺ</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 px-3 py-1.5 rounded-full border border-emerald-100 dark:border-emerald-800">
+            <i class="fas fa-dove text-xs"></i> <span class="value-3">Peace & Unity</span>
+          </span>
+        </div>
+
+        <!-- Achievements -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-gradient-to-br from-yellow-50 to-amber-50 dark:from-yellow-900/20 dark:to-amber-900/10 border border-yellow-200 dark:border-yellow-800/40 rounded-2xl p-4 sm:p-5 text-center">
+            <i class="fas fa-chalkboard-user text-2xl text-yellow-600 mb-2"></i>
+            <p class="text-2xl font-extrabold text-yellow-700 dark:text-yellow-400 font-display">150+</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400 mt-1 about-stat-1">Majalis & Urs Attended</p>
+          </div>
+          <div class="bg-gradient-to-br from-yellow-50 to-amber-50 dark:from-yellow-900/20 dark:to-amber-900/10 border border-yellow-200 dark:border-yellow-800/40 rounded-2xl p-4 sm:p-5 text-center">
+            <i class="fas fa-book-quran text-2xl text-yellow-600 mb-2"></i>
+            <p class="text-2xl font-extrabold text-yellow-700 dark:text-yellow-400 font-display">30</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400 mt-1 about-stat-2">Para Hifz Complete</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="flex justify-center md:justify-end">
+        <div class="about-img-frame">
+          <div class="about-img-inner shadow-2xl" style="width:280px;height:340px;">
+            <img src="assets/images/gallery4.jpeg"
+                 alt="Firoz Arquam at Islamic gathering"
+                 onerror="this.src='https://images.unsplash.com/photo-1519817650390-64a93db51149?w=400&h=500&fit=crop'"
+                 style="width:100%;height:100%;">
+          </div>
+          <!-- Caption badge -->
+          <div class="absolute bottom-4 -left-6 bg-white dark:bg-gray-800 shadow-xl rounded-2xl px-4 py-3 flex items-center gap-2 z-10 border border-yellow-200 dark:border-yellow-800/40">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center">
+              <i class="fas fa-mosque text-emerald-600 dark:text-emerald-400 text-xs"></i>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-gray-800 dark:text-white about-badge-1">Serving Ummah</p>
+              <p class="text-[10px] text-gray-500 dark:text-gray-400 about-badge-2">East Champaran, Bihar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ SERVICES SECTION ═══════════════════════════════════ -->
+<section id="services" class="py-20 sm:py-24 md:py-28 bg-stone-50 dark:bg-gray-900 relative overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(251,191,36,0.06),transparent_60%)] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Header -->
+    <div class="text-center max-w-2xl mx-auto mb-14 sm:mb-18">
+      <span class="section-label services-label">What I Offer</span>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-emerald-900 dark:text-emerald-400 mt-1 mb-2 font-display services-title">My Services</h2>
+      <div class="section-divider section-divider-center mb-4"></div>
+      <p class="text-gray-500 dark:text-gray-400 text-sm sm:text-base services-subtitle">Dedicated to spreading the beauty of Islam through recitation, speech, and poetry</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+      <!-- Service 1: Quran Recitation -->
+      <div class="service-card bg-white dark:bg-gray-800/80 rounded-2xl p-6 sm:p-8 shadow-sm">
+        <div class="service-icon-wrap mb-5">
+          <i class="fas fa-quran text-2xl text-yellow-600 dark:text-yellow-400"></i>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-bold text-gray-800 dark:text-white mb-3 font-display service-1-title">Quran Recitation</h3>
+        <p class="text-gray-500 dark:text-gray-400 text-sm sm:text-base leading-relaxed mb-4 service-1-desc">
+          Beautiful Tajweed & Tarteel recitation for spiritual gatherings, Milad events, and mosque programs with profound emotional depth.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 px-2.5 py-1 rounded-full">Tajweed</span>
+          <span class="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 px-2.5 py-1 rounded-full">Tarteel</span>
+          <span class="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 px-2.5 py-1 rounded-full">Hifz</span>
+        </div>
+      </div>
+
+      <!-- Service 2: Islamic Speeches -->
+      <div class="service-card bg-white dark:bg-gray-800/80 rounded-2xl p-6 sm:p-8 shadow-sm">
+        <div class="service-icon-wrap mb-5">
+          <i class="fas fa-microphone-alt text-2xl text-yellow-600 dark:text-yellow-400"></i>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-bold text-gray-800 dark:text-white mb-3 font-display service-2-title">Islamic Speeches</h3>
+        <p class="text-gray-500 dark:text-gray-400 text-sm sm:text-base leading-relaxed mb-4 service-2-desc">
+          Inspiring keynotes for Jalsa & Urs programs that touch hearts, strengthen Iman, and motivate the community toward the path of righteousness.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 px-2.5 py-1 rounded-full">Jalsa</span>
+          <span class="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 px-2.5 py-1 rounded-full">Urs</span>
+          <span class="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 px-2.5 py-1 rounded-full">Milad</span>
+        </div>
+      </div>
+
+      <!-- Service 3: Islamic Poetry -->
+      <div class="service-card bg-white dark:bg-gray-800/80 rounded-2xl p-6 sm:p-8 shadow-sm sm:col-span-2 lg:col-span-1">
+        <div class="service-icon-wrap mb-5">
+          <i class="fas fa-feather-alt text-2xl text-yellow-600 dark:text-yellow-400"></i>
+        </div>
+        <h3 class="text-xl sm:text-2xl font-bold text-gray-800 dark:text-white mb-3 font-display service-3-title">Islamic Poetry</h3>
+        <p class="text-gray-500 dark:text-gray-400 text-sm sm:text-base leading-relaxed mb-4 service-3-desc">
+          Soulful Urdu & Hindi poetry expressing love for Prophet Muhammad ﷺ, Islamic spirituality, and devotional nazms that move the soul.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 px-2.5 py-1 rounded-full">Urdu</span>
+          <span class="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 px-2.5 py-1 rounded-full">Hindi</span>
+          <span class="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 px-2.5 py-1 rounded-full">Naat</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ POETRY SECTION ═══════════════════════════════════ -->
+<section id="poetry" class="py-20 sm:py-24 md:py-28 bg-white dark:bg-gray-950 relative overflow-hidden">
+  <!-- Gold radial -->
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400/5 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Header -->
+    <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+      <span class="section-label poetry-label">Kalam & Shayari</span>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-emerald-900 dark:text-emerald-400 mt-1 mb-2 font-display poetry-title">My Poetry</h2>
+      <div class="section-divider section-divider-center mb-4"></div>
+      <p class="text-gray-500 dark:text-gray-400 text-sm sm:text-base poetry-subtitle">Expressing faith through heartfelt verses, Urdu kalam, and inspirational Islamic poetry</p>
+    </div>
+
+    <!-- Poetry Cards -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+      <div class="poetry-card bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-gray-800 dark:to-gray-800/60 border border-yellow-200 dark:border-yellow-900/40 rounded-2xl p-6 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-yellow-400/20 flex items-center justify-center">
+            <i class="fas fa-star text-yellow-500"></i>
+          </div>
+          <div>
+            <p class="font-bold text-yellow-700 dark:text-yellow-400 text-lg font-display">Noor-e-Hidayat</p>
+            <span class="text-xs text-gray-500 dark:text-gray-400">Urdu Kalam</span>
+          </div>
+        </div>
+        <p class="italic text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed border-l-4 border-yellow-400 pl-4">
+          "Rah-e-haq mein chalna hai, Noor-e-Khuda ka milna hai..."
+        </p>
+      </div>
+
+      <div class="poetry-card bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-gray-800 dark:to-gray-800/60 border border-yellow-200 dark:border-yellow-900/40 rounded-2xl p-6 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-yellow-400/20 flex items-center justify-center">
+            <i class="fas fa-moon text-yellow-500"></i>
+          </div>
+          <div>
+            <p class="font-bold text-yellow-700 dark:text-yellow-400 text-lg font-display">Ruh ka Safar</p>
+            <span class="text-xs text-gray-500 dark:text-gray-400">Hindi Nazm</span>
+          </div>
+        </div>
+        <p class="italic text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed border-l-4 border-yellow-400 pl-4">
+          "Dil ka safar hai rooh ki manzil, Madina se juda nahi hai manzar..."
+        </p>
+      </div>
+
+      <div class="poetry-card bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-gray-800 dark:to-gray-800/60 border border-yellow-200 dark:border-yellow-900/40 rounded-2xl p-6 shadow-sm">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-yellow-400/20 flex items-center justify-center">
+            <i class="fas fa-mosque text-yellow-500"></i>
+          </div>
+          <div>
+            <p class="font-bold text-yellow-700 dark:text-yellow-400 text-lg font-display">Madina ke Khwab</p>
+            <span class="text-xs text-gray-500 dark:text-gray-400">Naat Sharif</span>
+          </div>
+        </div>
+        <p class="italic text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed border-l-4 border-yellow-400 pl-4">
+          "Khwabon mein aaye Madina, humko bulaye roza-e-payambar..."
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CTA Badge -->
+    <div class="text-center mt-10 sm:mt-12">
+      <div class="inline-flex items-center gap-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-300 dark:border-yellow-800/50 text-yellow-700 dark:text-yellow-400 px-6 py-3 rounded-2xl text-sm font-semibold">
+        <i class="fas fa-feather-alt"></i>
+        <span class="poetry-count-text">50+ Original Compositions</span>
+        <i class="fas fa-feather-alt"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ GALLERY SECTION ═══════════════════════════════════ -->
+<section id="gallery" class="py-20 sm:py-24 md:py-28 bg-stone-50 dark:bg-gray-900 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+      <span class="section-label gallery-label">Moments</span>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-emerald-900 dark:text-emerald-400 mt-1 mb-2 font-display gallery-title">Gallery</h2>
+      <div class="section-divider section-divider-center mb-4"></div>
+      <p class="text-gray-500 dark:text-gray-400 text-sm sm:text-base gallery-subtitle">Glimpses from Islamic gatherings, Milad events, and Quranic programs</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+      <div class="gallery-card shadow-lg">
+        <img src="assets/images/gallery1.jpeg" alt="Islamic Event"
+             onerror="this.src='https://images.unsplash.com/photo-1519817650390-64a93db51149?w=600&h=400&fit=crop'"
+             class="w-full h-56 sm:h-64 object-cover">
+        <div class="gallery-overlay flex items-end justify-center pb-4">
+          <span class="text-white text-sm font-semibold gallery-cap-1">Islamic Gathering</span>
+        </div>
+      </div>
+      <div class="gallery-card shadow-lg">
+        <img src="assets/images/gallery2.jpeg" alt="Quran Recitation"
+             onerror="this.src='https://images.unsplash.com/photo-1552693673-1bf958298935?w=600&h=400&fit=crop'"
+             class="w-full h-56 sm:h-64 object-cover">
+        <div class="gallery-overlay flex items-end justify-center pb-4">
+          <span class="text-white text-sm font-semibold gallery-cap-2">Quran Recitation</span>
+        </div>
+      </div>
+      <div class="gallery-card shadow-lg sm:col-span-2 lg:col-span-1">
+        <img src="assets/images/gallery3.jpeg" alt="Islamic Speech"
+             onerror="this.src='https://images.unsplash.com/photo-1591854902976-64ab2c4ec8bf?w=600&h=400&fit=crop'"
+             class="w-full h-56 sm:h-64 object-cover">
+        <div class="gallery-overlay flex items-end justify-center pb-4">
+          <span class="text-white text-sm font-semibold gallery-cap-3">Jalsa Program</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ CONTACT SECTION ═══════════════════════════════════ -->
+<section id="contact" class="py-20 sm:py-24 md:py-28 bg-gradient-to-br from-emerald-950 via-green-900 to-emerald-900 text-white relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-emerald-600/20 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 opacity-5" style="background-image:url('https://images.unsplash.com/photo-1519817650390-64a93db51149?w=1600');background-size:cover;"></div>
+  </div>
+
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <!-- Header -->
+    <span class="section-label text-yellow-400">Get in Touch</span>
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mt-1 mb-2 font-display contact-title">Contact Me</h2>
+    <div class="section-divider section-divider-center mb-6"></div>
+    <p class="text-white/70 text-base sm:text-lg max-w-xl mx-auto mb-12 contact-subtitle">
+      Reach out to invite for Quranic programs, Islamic speeches, or poetic recitals at your events.
+    </p>
+
+    <!-- Contact Card -->
+    <div class="max-w-lg mx-auto">
+      <div class="contact-card p-6 sm:p-10 mb-6">
+        <div class="space-y-5">
+          <div class="flex items-center justify-center gap-3 text-base sm:text-lg">
+            <div class="w-10 h-10 rounded-xl bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-phone text-yellow-400"></i>
+            </div>
+            <span dir="ltr" class="font-semibold text-white">+91 87571 10296</span>
+          </div>
+          <div class="flex items-center justify-center gap-3 text-sm sm:text-base text-white/80">
+            <div class="w-10 h-10 rounded-xl bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-map-marker-alt text-yellow-400"></i>
+            </div>
+            <span>Mehsi, East Champaran, Bihar — 845426</span>
+          </div>
+          <div class="flex items-center justify-center gap-3 text-sm sm:text-base text-white/80">
+            <div class="w-10 h-10 rounded-xl bg-yellow-500/20 flex items-center justify-center flex-shrink-0">
+              <i class="fas fa-envelope text-yellow-400"></i>
+            </div>
+            <span class="text-sm break-all">mohammadfirozalam8757@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/918757110296" target="_blank" rel="noopener"
+           class="btn-primary justify-center py-3.5 sm:py-4 text-sm sm:text-base">
+          <i class="fab fa-whatsapp text-lg"></i>
+          <span class="whatsapp-text">WhatsApp Now</span>
+        </a>
+        <a href="mailto:mohammadfirozalam8757@gmail.com"
+           class="btn-outline justify-center py-3.5 sm:py-4 text-sm sm:text-base">
+          <i class="fas fa-envelope"></i>
+          <span class="email-text">Send Email</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quran Verse -->
+    <div class="mt-14 sm:mt-16 pt-8 border-t border-white/10">
+      <p class="text-white/50 text-sm italic">
+        <i class="fas fa-quran text-yellow-500 mr-2"></i>
+        "And remind, for indeed the reminder benefits the believers." — Quran 51:55
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════════ -->
+<footer class="bg-black text-gray-400 py-8 sm:py-10 border-t border-yellow-900/30">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-3 gap-6 items-center text-center sm:text-left">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-2 justify-center sm:justify-start mb-2">
+          <div class="w-8 h-8 rounded-lg bg-yellow-500/20 flex items-center justify-center">
+            <i class="fas fa-quran text-yellow-400 text-sm"></i>
+          </div>
+          <span class="text-white font-bold text-sm">Firoz Arquam Champarni</span>
+        </div>
+        <p class="text-xs text-gray-500">Hafiz-e-Quran | Islamic Speaker | Shayar</p>
+        <p class="text-xs text-gray-600 mt-1">© 2026 All Rights Reserved</p>
+      </div>
+
+      <!-- Quote -->
+      <div class="text-center">
+        <p class="text-xs text-yellow-400/70 italic">
+          <i class="fas fa-quote-left mr-1 text-yellow-600 text-xs"></i>
+          "Convey from me even if it is one verse"
+          <i class="fas fa-quote-right ml-1 text-yellow-600 text-xs"></i>
+        </p>
+        <p class="text-xs text-gray-600 mt-1">— Sahih Al-Bukhari</p>
+      </div>
+
+      <!-- Developer -->
+      <div class="text-center sm:text-right">
+        <p class="text-xs text-gray-500">
+          <i class="fas fa-code text-yellow-500 mr-1"></i>
+          Developed by
+        </p>
+        <p class="text-sm font-semibold text-yellow-400">Er. Sohrab Ali Ansari</p>
+        <p class="text-xs text-gray-500 mt-0.5">
+          <i class="fas fa-phone mr-1 text-xs"></i>
+          <a href="tel:+919199770786" class="hover:text-yellow-400 transition">+91-9199770786</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════ SCRIPTS ═══════════════════════════════════ -->
+<script>
+// ── DARK MODE ──────────────────────────────────────────
+const html = document.documentElement;
+const toggleBtn = document.getElementById('darkModeToggle');
+
+if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.body.classList.add('dark');
+  html.classList.add('dark');
+}
+
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  html.classList.toggle('dark');
+  localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+});
+
+// ── MOBILE MENU ────────────────────────────────────────
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobile-menu');
+menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+// ── SMOOTH SCROLL ──────────────────────────────────────
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+
+// ── LANGUAGE SYSTEM ────────────────────────────────────
+const T = {
+  en: {
+    nav: ['Home','About','Services','Poetry','Gallery','Contact'],
+    heroEyebrow: 'Bismillah ir-Rahman ir-Rahim',
+    d1:'Hafiz-e-Quran', d2:'Islamic Speaker', d3:'Shayar',
+    heroBio: 'Serving the Ummah through Quran recitation with Tajweed, inspiring Islamic speeches, and soul-stirring poetry from Mehsi, East Champaran, Bihar.',
+    statMajlis:'Majalis', statPoems:'Poems', statHifz:'Hafiz-e-Quran',
+    ctaContact:'Get in Touch', ctaPoetry:'Explore Poetry',
+    scrollText:'Scroll Down',
+    aboutLabel:'About Me', aboutTitle:'Who I Am',
+    aboutDesc:'I am Firoz Arquam Champarni from Mehsi, East Champaran, Bihar. I am honored to serve the Muslim community through the divine art of Quran recitation with Tajweed, inspirational Islamic speeches, and soul-stirring poetry. My mission is to spread the light of knowledge, unity, and faith through every gathering, Jalsa, and Urs. Let\'s walk this blessed path together, seeking the pleasure of Allah and following the footsteps of our beloved Prophet Muhammad (ﷺ).',
+    v1:'Service to Ummah', v2:'Love for Prophet ﷺ', v3:'Peace & Unity',
+    as1:'Majalis & Urs Attended', as2:'Para Hifz Complete',
+    abBadge1:'Serving Ummah', abBadge2:'East Champaran, Bihar',
+    servicesLabel:'What I Offer', servicesTitle:'My Services', servicesSub:'Dedicated to spreading the beauty of Islam through recitation, speech, and poetry',
+    s1t:'Quran Recitation', s1d:'Beautiful Tajweed & Tarteel recitation for spiritual gatherings, Milad events, and mosque programs with profound emotional depth.',
+    s2t:'Islamic Speeches', s2d:'Inspiring keynotes for Jalsa & Urs programs that touch hearts, strengthen Iman, and motivate the community toward righteousness.',
+    s3t:'Islamic Poetry', s3d:'Soulful Urdu & Hindi poetry expressing love for Prophet Muhammad ﷺ, Islamic spirituality, and devotional nazms that move the soul.',
+    poetryLabel:'Kalam & Shayari', poetryTitle:'My Poetry', poetrySub:'Expressing faith through heartfelt verses, Urdu kalam, and inspirational Islamic poetry',
+    poetryCount:'50+ Original Compositions',
+    galleryLabel:'Moments', galleryTitle:'Gallery', gallerySub:'Glimpses from Islamic gatherings, Milad events, and Quranic programs',
+    gc1:'Islamic Gathering', gc2:'Quran Recitation', gc3:'Jalsa Program',
+    contactTitle:'Contact Me', contactSub:'Reach out to invite for Quranic programs, Islamic speeches, or poetic recitals at your events.',
+    whatsapp:'WhatsApp Now', email:'Send Email',
+    dir:'ltr', htmlLang:'en'
+  },
+  hi: {
+    nav: ['होम','परिचय','सेवाएं','शायरी','गैलरी','संपर्क'],
+    heroEyebrow: 'बिस्मिल्लाह हिर्रहमान निर्रहीम',
+    d1:'हाफ़िज़-ए-क़ुरआन', d2:'इस्लामिक वक्ता', d3:'शायर',
+    heroBio: 'मेहसी, पूर्वी चंपारण, बिहार से उम्मत की सेवा — क़ुरआन तिलावत, इस्लामी भाषण और दिल को छूने वाली शायरी के ज़रिए।',
+    statMajlis:'मजलिसें', statPoems:'शायरियाँ', statHifz:'हाफ़िज़-ए-क़ुरआन',
+    ctaContact:'संपर्क करें', ctaPoetry:'शायरी देखें',
+    scrollText:'नीचे स्क्रॉल करें',
+    aboutLabel:'मेरे बारे में', aboutTitle:'मेरा परिचय',
+    aboutDesc:'मैं फिरोज़ अरक़म चंपारनी, बिहार के पूर्वी चंपारण जिले के मेहसी से हूँ। मैं क़ुरआन की तिलावत, प्रेरणादायक इस्लामी भाषण और शायरी के माध्यम से मुस्लिम समुदाय की सेवा करता हूँ। मेरा मक़सद हर मजलिस, जलसे और उर्स में इल्म, इत्तेहाद और ईमान की रोशनी फैलाना है।',
+    v1:'उम्मत की सेवा', v2:'नबी ﷺ से मोहब्बत', v3:'अमन और एकता',
+    as1:'मजालिस और उर्स', as2:'पारा हिफ्ज़ मुकम्मल',
+    abBadge1:'उम्मत की सेवा', abBadge2:'पूर्वी चंपारण, बिहार',
+    servicesLabel:'मेरी सेवाएं', servicesTitle:'सेवाएं', servicesSub:'तिलावत, भाषण और शायरी के ज़रिए इस्लाम की खूबसूरती फैलाने के लिए समर्पित',
+    s1t:'क़ुरआन तिलावत', s1d:'तजवीद और तरतील के साथ खूबसूरत तिलावत — मजालिस, मीलाद और मस्जिद के प्रोग्रामों के लिए।',
+    s2t:'इस्लामी भाषण', s2d:'जलसे और उर्स के लिए प्रेरणादायक भाषण जो दिलों को छूते हैं और ईमान को मजबूत करते हैं।',
+    s3t:'इस्लामी शायरी', s3d:'नबी ﷺ से मोहब्बत और इस्लामी रूहानियत पर उर्दू और हिंदी में दिल को छूने वाली शायरी।',
+    poetryLabel:'कलाम और शायरी', poetryTitle:'मेरी शायरी', poetrySub:'दिल से निकले अशआर, उर्दू कलाम और प्रेरणादायक इस्लामी शायरी',
+    poetryCount:'50+ मौलिक रचनाएं',
+    galleryLabel:'यादगार लम्हे', galleryTitle:'गैलरी', gallerySub:'इस्लामी महफ़िलों, मीलाद और क़ुरआनी प्रोग्रामों की झलकियाँ',
+    gc1:'इस्लामी महफ़िल', gc2:'क़ुरआन तिलावत', gc3:'जलसा प्रोग्राम',
+    contactTitle:'संपर्क करें', contactSub:'क़ुरआनी सेवाओं, इस्लामी भाषणों या शायरी के लिए संपर्क करें।',
+    whatsapp:'व्हाट्सएप करें', email:'ईमेल करें',
+    dir:'ltr', htmlLang:'hi'
+  },
+  ur: {
+    nav: ['ہوم','تعارف','خدمات','شاعری','گیلری','رابطہ'],
+    heroEyebrow: 'بسم اللہ الرحمٰن الرحیم',
+    d1:'حافظ قرآن', d2:'اسلامی مقرر', d3:'شاعر',
+    heroBio: 'بہار کے ضلع مشرقی چمپارن کے مہسی سے — قرآن تلاوت، اسلامی تقاریر اور روح کو چھونے والی شاعری سے امت کی خدمت میں۔',
+    statMajlis:'مجالس', statPoems:'اشعار', statHifz:'حافظ القرآن',
+    ctaContact:'رابطہ کریں', ctaPoetry:'شاعری دیکھیں',
+    scrollText:'نیچے سکرول کریں',
+    aboutLabel:'میرا تعارف', aboutTitle:'میں کون ہوں',
+    aboutDesc:'میں فیروز ارقم چمپارنی، بہار کے مشرقی چمپارن ضلع کے مہسی سے ہوں۔ میں قرآن کریم کی تلاوت، اسلامی تقاریر اور شاعری کے ذریعے مسلم کمیونٹی کی خدمت کرتا ہوں۔ میرا مقصد ہر مجلس، جلسے اور عرس میں علم، اتحاد اور ایمان کی روشنی پھیلانا ہے۔',
+    v1:'خدمت امت', v2:'محبت نبی ﷺ', v3:'امن اور اتحاد',
+    as1:'مجالس و عرس', as2:'پارہ حفظ مکمل',
+    abBadge1:'خدمت امت', abBadge2:'مشرقی چمپارن، بہار',
+    servicesLabel:'میری خدمات', servicesTitle:'خدمات', servicesSub:'تلاوت، تقریر اور شاعری کے ذریعے اسلام کی خوبصورتی پھیلانے کے لیے وقف',
+    s1t:'قرآن تلاوت', s1d:'تجوید اور ترتیل کے ساتھ خوبصورت تلاوت — مجالس، میلاد اور مساجد کے پروگرامز کے لیے۔',
+    s2t:'اسلامی تقاریر', s2d:'جلسوں اور عرس کے لیے متاثر کن تقاریر جو دلوں کو چھوتی ہیں اور ایمان کو مضبوط کرتی ہیں۔',
+    s3t:'اسلامی شاعری', s3d:'حضور نبی کریم ﷺ کی محبت اور اسلامی روحانیت پر اردو میں دل کو چھونے والی شاعری۔',
+    poetryLabel:'کلام و شاعری', poetryTitle:'میری شاعری', poetrySub:'دل سے نکلے اشعار، اردو کلام اور متاثر کن اسلامی شاعری',
+    poetryCount:'+50 اصل تخلیقات',
+    galleryLabel:'یادگار لمحات', galleryTitle:'گیلری', gallerySub:'اسلامی اجتماعات، میلاد اور قرآنی پروگرامز کی جھلکیاں',
+    gc1:'اسلامی اجتماع', gc2:'قرآن تلاوت', gc3:'جلسہ پروگرام',
+    contactTitle:'رابطہ کریں', contactSub:'قرآنی خدمات، اسلامی پروگرامز یا شعری محفل کے لیے رابطہ کریں۔',
+    whatsapp:'واٹس ایپ کریں', email:'ای میل کریں',
+    dir:'rtl', htmlLang:'ur'
+  },
+  ar: {
+    nav: ['الرئيسية','عني','الخدمات','الشعر','معرض الصور','اتصل'],
+    heroEyebrow: 'بسم الله الرحمن الرحيم',
+    d1:'حافظ القرآن', d2:'خطيب إسلامي', d3:'شاعر',
+    heroBio: 'أخدم الأمة الإسلامية من ميهسي، شرق شامباران، بيهار — من خلال تلاوة القرآن الكريم والخطب الإسلامية الملهمة والشعر المؤثر.',
+    statMajlis:'المجالس', statPoems:'القصائد', statHifz:'حافظ القرآن',
+    ctaContact:'تواصل معي', ctaPoetry:'استعرض الشعر',
+    scrollText:'انتقل لأسفل',
+    aboutLabel:'نبذة عني', aboutTitle:'من أنا',
+    aboutDesc:'أنا فيروز أرقام تشامبارني من ميهسي، شرق شامباران، بيهار. أتشرف بخدمة المجتمع المسلم من خلال تلاوة القرآن الكريم بالتجويد والخطب الإسلامية الملهمة والشعر العميق. مهمتي هي نشر نور المعرفة والوحدة والإيمان في كل تجمع.',
+    v1:'خدمة الأمة', v2:'محبة النبي ﷺ', v3:'السلام والوحدة',
+    as1:'المجالس والأعراس', as2:'حفظ كامل للقرآن',
+    abBadge1:'خدمة الأمة', abBadge2:'شرق شامباران، بيهار',
+    servicesLabel:'ما أقدمه', servicesTitle:'الخدمات', servicesSub:'مكرّس لنشر جمال الإسلام من خلال التلاوة والخطابة والشعر',
+    s1t:'تلاوة القرآن', s1d:'تلاوة جميلة بالتجويد والترتيل للتجمعات الروحية وفعاليات المولد وبرامج المساجد.',
+    s2t:'الخطب الإسلامية', s2d:'خطب ملهمة للجلسات والأعراس تلامس القلوب وتقوي الإيمان وتحفز المجتمع.',
+    s3t:'الشعر الإسلامي', s3d:'شعر عميق باللغة الأردية والهندية يعبر عن محبة النبي ﷺ والروحانية الإسلامية.',
+    poetryLabel:'الكلام والشعر', poetryTitle:'شعري', poetrySub:'التعبير عن الإيمان من خلال أبيات صادقة وكلام أردي وشعر إسلامي ملهم',
+    poetryCount:'+50 قصيدة أصلية',
+    galleryLabel:'لحظات', galleryTitle:'معرض الصور', gallerySub:'لمحات من التجمعات الإسلامية وفعاليات المولد والبرامج القرآنية',
+    gc1:'التجمع الإسلامي', gc2:'تلاوة القرآن', gc3:'برنامج الجلسة',
+    contactTitle:'تواصل معي', contactSub:'تواصل للدعوة للبرامج القرآنية والخطب الإسلامية أو أمسيات الشعر.',
+    whatsapp:'واتساب الآن', email:'أرسل إيميل',
+    dir:'rtl', htmlLang:'ar'
+  }
+};
+
+function applyLang(lang) {
+  const t = T[lang];
+  if (!t) return;
+
+  // HTML dir
+  document.documentElement.dir = t.dir;
+  document.documentElement.lang = t.htmlLang;
+
+  // Nav links (both desktop + mobile)
+  ['home','about','services','poetry','gallery','contact'].forEach((cls, i) => {
+    document.querySelectorAll('.nav-'+cls).forEach(el => el.textContent = t.nav[i]);
+  });
+
+  // Hero
+  document.querySelectorAll('.hero-eyebrow-text').forEach(el => el.textContent = t.heroEyebrow);
+  document.querySelectorAll('.designation-1').forEach(el => el.textContent = t.d1);
+  document.querySelectorAll('.designation-2').forEach(el => el.textContent = t.d2);
+  document.querySelectorAll('.designation-3').forEach(el => el.textContent = t.d3);
+  document.querySelectorAll('.hero-bio').forEach(el => el.textContent = t.heroBio);
+  document.querySelectorAll('.stat-majlis').forEach(el => el.textContent = t.statMajlis);
+  document.querySelectorAll('.stat-poems').forEach(el => el.textContent = t.statPoems);
+  document.querySelectorAll('.stat-hifz').forEach(el => el.textContent = t.statHifz);
+  document.querySelectorAll('.cta-contact').forEach(el => el.textContent = t.ctaContact);
+  document.querySelectorAll('.cta-poetry').forEach(el => el.textContent = t.ctaPoetry);
+  document.querySelectorAll('.scroll-text').forEach(el => el.textContent = t.scrollText);
+
+  // About
+  document.querySelectorAll('.about-label').forEach(el => el.textContent = t.aboutLabel);
+  document.querySelectorAll('.about-title').forEach(el => el.textContent = t.aboutTitle);
+  document.querySelectorAll('.about-desc').forEach(el => el.textContent = t.aboutDesc);
+  document.querySelectorAll('.value-1').forEach(el => el.textContent = t.v1);
+  document.querySelectorAll('.value-2').forEach(el => el.textContent = t.v2);
+  document.querySelectorAll('.value-3').forEach(el => el.textContent = t.v3);
+  document.querySelectorAll('.about-stat-1').forEach(el => el.textContent = t.as1);
+  document.querySelectorAll('.about-stat-2').forEach(el => el.textContent = t.as2);
+  document.querySelectorAll('.about-badge-1').forEach(el => el.textContent = t.abBadge1);
+  document.querySelectorAll('.about-badge-2').forEach(el => el.textContent = t.abBadge2);
+
+  // Services
+  document.querySelectorAll('.services-label').forEach(el => el.textContent = t.servicesLabel);
+  document.querySelectorAll('.services-title').forEach(el => el.textContent = t.servicesTitle);
+  document.querySelectorAll('.services-subtitle').forEach(el => el.textContent = t.servicesSub);
+  document.querySelectorAll('.service-1-title').forEach(el => el.textContent = t.s1t);
+  document.querySelectorAll('.service-1-desc').forEach(el => el.textContent = t.s1d);
+  document.querySelectorAll('.service-2-title').forEach(el => el.textContent = t.s2t);
+  document.querySelectorAll('.service-2-desc').forEach(el => el.textContent = t.s2d);
+  document.querySelectorAll('.service-3-title').forEach(el => el.textContent = t.s3t);
+  document.querySelectorAll('.service-3-desc').forEach(el => el.textContent = t.s3d);
+
+  // Poetry
+  document.querySelectorAll('.poetry-label').forEach(el => el.textContent = t.poetryLabel);
+  document.querySelectorAll('.poetry-title').forEach(el => el.textContent = t.poetryTitle);
+  document.querySelectorAll('.poetry-subtitle').forEach(el => el.textContent = t.poetrySub);
+  document.querySelectorAll('.poetry-count-text').forEach(el => el.textContent = t.poetryCount);
+
+  // Gallery
+  document.querySelectorAll('.gallery-label').forEach(el => el.textContent = t.galleryLabel);
+  document.querySelectorAll('.gallery-title').forEach(el => el.textContent = t.galleryTitle);
+  document.querySelectorAll('.gallery-subtitle').forEach(el => el.textContent = t.gallerySub);
+  document.querySelectorAll('.gallery-cap-1').forEach(el => el.textContent = t.gc1);
+  document.querySelectorAll('.gallery-cap-2').forEach(el => el.textContent = t.gc2);
+  document.querySelectorAll('.gallery-cap-3').forEach(el => el.textContent = t.gc3);
+
+  // Contact
+  document.querySelectorAll('.contact-title').forEach(el => el.textContent = t.contactTitle);
+  document.querySelectorAll('.contact-subtitle').forEach(el => el.textContent = t.contactSub);
+  document.querySelectorAll('.whatsapp-text').forEach(el => el.textContent = t.whatsapp);
+  document.querySelectorAll('.email-text').forEach(el => el.textContent = t.email);
+}
+
+document.getElementById('langSelect').addEventListener('change', e => applyLang(e.target.value));
+applyLang('en');
+</script>
+</body>
+</html>
